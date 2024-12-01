@@ -1,0 +1,15 @@
+* {
+    transition: 0.5s;
+}
+
+.navbar {
+    background-color: var(--dark-color-primary);
+}
+
+.navbar a {
+    color: var(--dark-font-primary);
+}
+
+.navbar a:hover {
+    color: var(--dark-font-secondary);
+}
