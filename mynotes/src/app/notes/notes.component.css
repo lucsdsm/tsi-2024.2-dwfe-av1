@@ -1,0 +1,23 @@
+.card {
+    width: 300px;
+    color: var(--text-color) !important;
+    background-color: var(--navbar-color) !important;
+    border-radius: 10px;
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: scale(1.01) rotate(1deg);
+}
+
+.card:active {
+    transform: scale(0.8) rotate(0deg);
+}
+
+.d-flex {
+    width: 50vw; /* 50% da largura da tela */
+    justify-content: center;
+    position: relative;
+    left: 50%; /* Move para o meio da tela */
+    transform: translateX(-50%); /* Ajusta para garantir que o centro esteja exatamente no meio */
+}

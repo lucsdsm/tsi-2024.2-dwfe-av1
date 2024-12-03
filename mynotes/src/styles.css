@@ -1,9 +1,15 @@
-:root {
-    --dark-color-primary: black;
-    --dark-color-secondary: rgb(30, 30, 30);
-    --dark-font-primary: lightgrey;
-    --dark-font-secondary: darkgrey;
+* {
+    transition: 0.5s;
 }
 
+:root {
+    --background-color: #121212;
+    --navbar-color: rgb(30, 30, 30);
+    --text-color: lightgrey;
+    --text-color-secondary: darkgrey;
+}
 
-  
+body {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}

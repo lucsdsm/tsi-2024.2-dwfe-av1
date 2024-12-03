@@ -1,15 +1,16 @@
-* {
-    transition: 0.5s;
-}
-
 .navbar {
-    background-color: var(--dark-color-primary);
+    background-color: var(--navbar-color);
 }
 
 .navbar a {
-    color: var(--dark-font-primary);
+    color: var(--text-color);
+    font-family: "Knewave", system-ui; 
 }
 
 .navbar a:hover {
-    color: var(--dark-font-secondary);
+    color: var(--text-color-secondary);
+}
+
+.form-check-input:checked {
+    background-color: #fdbf00; /* Cor do switch ativo */
 }

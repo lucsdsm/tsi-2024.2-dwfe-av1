@@ -1,0 +1,20 @@
+.navbar {
+    background-color: var(--navbar-color);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.navbar a {
+    color: var(--text-color);
+    font-family: "Knewave", system-ui;
+    font-size: 12px;
+}
+
+.navbar a:hover {
+    color: var(--text-color-secondary);
+}
+
+.form-check-input:checked {
+    background-color: #fdbf00; /* Cor do switch ativo */
+}
