@@ -12,12 +12,8 @@ import { NgClass, NgFor } from '@angular/common';
 })
 export class BodyComponent {
   notes: Note[] = [
-    new Note('Nota 1', 'Resumo da Nota 1', 'Texto completo da Nota 1'),
-    new Note('Nota 2', 'Resumo da Nota 2', 'Texto completo da Nota 2'),
-    new Note('Nota 3', 'Resumo da Nota 3', 'Texto completo da Nota 3'),
+    new Note('Praesent libero', 'Integer id ullamcorper massa, sed hendrerit sem.', 'Texto completo da Nota 1'),
+    new Note('Vivamus vitae', 'Pellentesque accumsan sollicitudin purus, a consectetur.', 'Texto completo da Nota 2'),
+    new Note('Aliquam tristique', 'Morbi vestibulum, lacus sed cursus commodo,', 'Texto completo da Nota 3'),
   ];
-
-  constructor() {
-    console.log('Lista de notas:', this.notes); // Verifique se a lista está preenchida no console do navegador
-  }
 }
