@@ -1,1 +1,5 @@
-<app-notes></app-notes>
+<div class="d-flex flex-wrap justify-content-center align-items-center py-5">
+    <app-cards *ngFor="let note of notes; let index = index" 
+    [note]="note" 
+    [index]="index"></app-cards>
+</div>
