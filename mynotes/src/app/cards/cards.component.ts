@@ -12,10 +12,10 @@ export class CardsComponent {
   @Input() note!: Note;
   @Input() index!: number;
 
-  @Output() openModalEvent = new EventEmitter<Note>(); // Evento para emitir a nota
+  @Output() openModalEvent = new EventEmitter<Note>();
 
   openModal() {
-    this.openModalEvent.emit(this.note); // Emitindo a nota diretamente
+    this.openModalEvent.emit(this.note);
   }
 }
 

@@ -1,8 +1,6 @@
-
-
 .modal-content {
     background-color: var(--background-color);
-    color: var(--text-color-secondary);
+    color: var(--text-color);
     border-radius: 10px;
     text-align: justify;
     padding: 1rem;
