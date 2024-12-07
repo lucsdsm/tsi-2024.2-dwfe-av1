@@ -1,8 +1,9 @@
-<div class="card text-bg-dark mb-3 me-3 col-sm-4 mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
-    style="max-width: 18rem;">
-    <div class="card-header">{{ index + 1 }}</div>
-    <div class="card-body">
-        <h5 class="card-title">{{ note.title }}</h5>
-        <p class="card-text">{{ note.summary }}</p>
-    </div>
+<div class="card text-bg-dark mb-3 me-3 col-sm-4 mb-5"
+     style="max-width: 18rem;"
+     (click)="openModal()">
+  <div class="card-header">{{ index + 1 }}</div>
+  <div class="card-body">
+    <h5 class="card-title">{{ note.title }}</h5>
+    <p class="card-text">{{ note.summary }}</p>
+  </div>
 </div>

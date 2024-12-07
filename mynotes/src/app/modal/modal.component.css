@@ -1,0 +1,13 @@
+
+
+.modal-content {
+    background-color: var(--background-color);
+    color: var(--text-color-secondary);
+    border-radius: 10px;
+    text-align: justify;
+    padding: 1rem;
+}
+
+.modal-header {
+    border-width: 0px;
+}

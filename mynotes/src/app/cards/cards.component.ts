@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Note } from '../../models/note';
 
 @Component({
@@ -11,4 +11,12 @@ import { Note } from '../../models/note';
 export class CardsComponent {
   @Input() note!: Note;
   @Input() index!: number;
+
+  @Output() openModalEvent = new EventEmitter<Note>(); // Evento para emitir a nota
+
+  openModal() {
+    this.openModalEvent.emit(this.note); // Emitindo a nota diretamente
+  }
 }
+
+
