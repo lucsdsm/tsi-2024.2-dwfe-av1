@@ -1,6 +1,6 @@
 # tsi-2024.2-dwfe-av1
 
-Nome dos integrantes:
+Alunos:
 Lucas Eduardo dos Santos Machado
 
 
@@ -19,7 +19,7 @@ Antes de executar o projeto, certifique-se de ter o seguinte configurado no seu 
 ### **2. Como Executar**
 1. Clone este repositório:
 ```bash
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/lucsdsm/tsi-2024.2-dwfe-av1.git
 ```
 
 2. Navegue até o diretório do projeto:
