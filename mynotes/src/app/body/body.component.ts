@@ -4,11 +4,12 @@ import { Note } from '../../models/note';
 import { NgFor } from '@angular/common';
 import { ModalComponent } from "../modal/modal.component";
 import * as bootstrap from 'bootstrap';
+import { AddCardComponent } from "../add-card/add-card.component";
 
 @Component({
   selector: 'app-body',
   standalone: true,
-  imports: [CardsComponent, NgFor, ModalComponent],
+  imports: [CardsComponent, NgFor, ModalComponent, AddCardComponent],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css'
 })

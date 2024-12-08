@@ -1,0 +1,28 @@
+.card {
+    color: var(--text-color) !important;
+    background-color: var(--navbar-color) !important;
+    border-radius: 10px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+input {
+    color: var(--text-color) !important;
+    background-color: var(--navbar-color) !important;
+    border: 0px;
+    font-style: italic;
+}
+
+::placeholder {
+    color: var(--text-color) !important;
+    background-color: var(--navbar-color) !important;
+}
+
+textarea {
+    color: var(--text-color) !important;
+    background-color: var(--navbar-color) !important;
+    border: 0px;
+    font-style: italic;
+}
