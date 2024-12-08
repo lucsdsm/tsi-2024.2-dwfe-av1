@@ -1,11 +1,11 @@
 <div class="d-flex flex-wrap justify-content-center align-items-center py-5">
     <div class="card text-bg-dark" style="width: 300px;">
       <div class="card-body">
-        <input type="text" class="form-control" placeholder="Título" aria-label="Título"
+        <input type="text" class="form-control" placeholder="Título" aria-label="Título" maxlength="25"
                [(ngModel)]="title"> <br>
-        <textarea class="form-control" placeholder="Descrição" aria-label="Descrição"
+        <textarea class="form-control" placeholder="Descrição" aria-label="Descrição"  maxlength="40"
                   [(ngModel)]="summary" style="height: 30px;"></textarea> <br>
-        <textarea class="form-control" placeholder="Nota" aria-label="Nota"
+        <textarea class="form-control" placeholder="Nota" aria-label="Nota" maxlength="120"
                   [(ngModel)]="content" style="height: 30px;"></textarea> <br>
         <button type="button" class="btn btn-success" (click)="onAddNote()">Adicionar nota</button>
       </div>
