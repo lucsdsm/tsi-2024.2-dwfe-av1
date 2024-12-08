@@ -1,24 +1,27 @@
+import * as bootstrap from 'bootstrap';
 import { Component, NgModule } from '@angular/core';
 import { CardsComponent } from '../cards/cards.component';
 import { Note } from '../../models/note'; 
 import { NgFor } from '@angular/common';
 import { ModalComponent } from "../modal/modal.component";
-import * as bootstrap from 'bootstrap';
 import { AddCardComponent } from "../add-card/add-card.component";
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-body',
   standalone: true,
-  imports: [CardsComponent, NgFor, ModalComponent, AddCardComponent],
+  imports: [CardsComponent, NgFor, ModalComponent, AddCardComponent, FormsModule],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css'
 })
 export class BodyComponent {
   notes: Note[] = [
-    new Note('Praesent libero', 'Integer id ullamcorper massa, sed hendrerit sem.', 'Donec in iaculis justo. Sed ac lacus rhoncus, vestibulum felis in, dignissim tortor. Etiam lorem enim, iaculis nec finibus sed, egestas at erat. Praesent nec hendrerit metus. Nullam fringilla commodo semper. In est nibh, scelerisque ut condimentum nec, fermentum ut massa. Vestibulum ultricies tempor lobortis. Fusce a euismod turpis, vitae dictum lacus. Morbi non nunc ac lorem tincidunt vehicula. Morbi at dolor vitae mi sodales posuere et quis felis. Vestibulum eu neque et felis laoreet interdum.'),
-    new Note('Vivamus vitae', 'Pellentesque accumsan sollicitudin purus, a consectetur.', 'Nam et rhoncus diam. Fusce orci nulla, interdum pellentesque eleifend sed, semper vitae velit. Sed in posuere libero, id vestibulum lectus. Fusce scelerisque sapien quis justo pretium, ac pulvinar erat dictum. Vivamus consequat, mauris ac feugiat sollicitudin, diam nisi varius leo, sit amet lobortis ligula est at neque. Aenean feugiat lorem ut magna eleifend dapibus. Nulla ut blandit ligula, et vulputate ante. Fusce orci risus, cursus vitae dignissim ac, efficitur quis tellus. Fusce et sollicitudin eros. Aenean ullamcorper fringilla felis. Donec id arcu ultricies, volutpat ipsum ut, luctus risus. Donec non lacus viverra, condimentum risus sed, luctus ex. Cras vehicula facilisis commodo.'),
-    new Note('Aliquam tristique', 'Morbi vestibulum, lacus sed cursus commodo,', 'Sed at faucibus nunc, facilisis facilisis ligula. Pellentesque consectetur, dui ut sagittis venenatis, justo ipsum ultrices mi, eget dignissim ligula odio at orci. Aliquam at purus purus. Phasellus efficitur aliquet magna eu semper. Cras viverra, nisi vitae molestie malesuada, erat sem fringilla risus, a porta dolor dui at dui. Proin sit amet augue non erat pellentesque pharetra non eget nunc. Nunc posuere risus finibus felis feugiat, id sollicitudin urna aliquam. Duis eu ante turpis. Duis id risus pellentesque, tincidunt nisl non, consequat velit. Nullam mattis pulvinar velit. Curabitur venenatis, nisi vel fringilla posuere, sapien lorem tempor libero, vel semper neque orci ut magna. Phasellus ac tincidunt sem, in rutrum ipsum.'),
   ];
+
+  noNotesMessage: string = 'Não há nada por aqui ainda. Adicione uma nova nota!';
+  noNotesImage: string = 'https://cdn-icons-png.flaticon.com/512/1201/1201088.png';
+  noNotesAltText: string = 'Nenhuma nota encontrada';
+  noNotesImageSize: number = 25;
 
   selectedNote: Note | null = null;
 
@@ -27,5 +30,9 @@ export class BodyComponent {
     const modalElement = document.getElementById('exampleModal')!;
     const modal = new bootstrap.Modal(modalElement);
     modal.show();
-  } 
+  }
+
+  addNoteToList(newNote: Note) {
+    this.notes.push(newNote); // Adiciona a nova nota à lista
+  }
 }
